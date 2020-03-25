@@ -1,0 +1,30 @@
+rfc:
+- rfc__n_estimators: [50]
+  rfc__max_features: ["sqrt", 0.33]
+  rfc__max_depth: [5]
+  rfc__min_samples_split: [50]
+  rfc__min_samples_leaf: [1]
+  rfc__class_weight: ["balanced"]
+  rfc__bootstrap: [true]
+  rfc__oob_score: [true]
+
+
+svm:
+- svm__C:  [0.5, 0.7]
+  svm__class_weight: ["balanced"]
+  svm__probability: [true] 
+  svm__kernel: ["linear"]
+  svm__max_iter: [100000]
+  svm__degree: [2]
+
+reduce:
+- reduce__percentile: [100]
+
+scaler:
+- scaler__columns: [null]
+  scaler__with_centering: [false]
+  scaler__with_scaling: [false]
+
+adaptor:
+- adaptor__columns: [[ 'cjv', 'cnr', 'efc', 'fber', 'fwhm_avg', 'fwhm_x', 'fwhm_y', 'fwhm_z', 'icvs_csf', 'icvs_gm', 'icvs_wm', 'inu_med', 'inu_range', 'qi_1', 'qi_2', 'rpve_csf', 'rpve_gm', 'rpve_wm', 'snr_csf', 'snr_gm', 'snr_total', 'snr_wm', 'snrd_csf', 'snrd_gm', 'snrd_total', 'snrd_wm', 'summary_bg_k', 'summary_bg_mad', 'summary_bg_mean', 'summary_bg_median', 'summary_bg_n', 'summary_bg_p05', 'summary_bg_p95', 'summary_bg_stdv', 'summary_csf_k', 'summary_csf_mad', 'summary_csf_mean', 'summary_csf_median', 'summary_csf_n', 'summary_csf_p05', 'summary_csf_p95', 'summary_csf_stdv', 'summary_gm_k', 'summary_gm_mad', 'summary_gm_mean', 'summary_gm_median', 'summary_gm_n', 'summary_gm_p05', 'summary_gm_p95', 'summary_gm_stdv', 'summary_wm_k', 'summary_wm_mad', 'summary_wm_mean', 'summary_wm_median', 'summary_wm_n', 'summary_wm_p05', 'summary_wm_p95', 'summary_wm_stdv', 'tpm_overlap_csf', 'tpm_overlap_gm', 'tpm_overlap_wm', 'wm2max']
+] 
